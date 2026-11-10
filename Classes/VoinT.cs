@@ -5,8 +5,10 @@ class VoinT : Voin
     {
         img = "avares://Pr8/Img/VoinT.jpg";
     }
-    public override void mdamage(int _damage)
+    public override void mdamage(float _damage)
     {
         hp -= _damage * 0.5F;
+        if (hp < 0)
+            hp = 0;
     }
 }

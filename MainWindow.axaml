@@ -4,6 +4,72 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Pr8.MainWindow"
-        Title="Pr8">
-    Welcome to Avalonia!
+        Title="Pr8"
+        Width="800"
+        Height="450"
+        MinWidth="800"
+        MinHeight="450">
+        <Grid Background="#FF424242">
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" 
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                Margin="10" 
+                Background="White"
+                PointerPressed="Attack">
+                        <Grid>
+                                <Image 
+                                Margin="10,10,10.2,185.4" 
+                                Source="avares://Pr8/Img/Voin.jpg"/>
+                                <TextBlock 
+                                Text="Жизненные показатели: " 
+                                x:Name="HpVoin"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Bottom"
+                                Foreground="Black"
+                                Margin="10,0,0,130"/>
+                        </Grid>
+                </Border>
+                <Border Grid.Column="1" 
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                Margin="10" 
+                Background="White"
+                PointerPressed="Attack">
+                        <Grid>
+                                <Image 
+                                Margin="10,10,10.2,185.4" 
+                                Source="avares://Pr8/Img/VoinL.jpg"/>
+                                <TextBlock 
+                                Text="Жизненные показатели: " 
+                                x:Name="HpVoinL"
+                                HorizontalAlignment="Left" 
+                                VerticalAlignment="Bottom"
+                                Foreground="Black" 
+                                Margin="10,0,0,130"/>
+                        </Grid>
+                </Border>
+                <Border Grid.Column="2" 
+                BorderBrush="Black" 
+                BorderThickness="1" 
+                Margin="10" 
+                Background="White"
+                PointerPressed="Attack"
+                >
+                        <Grid>
+                                <Image Margin="10,10,10.2,185.4" 
+                                Source="avares://Pr8/Img/VoinT.jpg"/>
+                                <TextBlock Text="Жизненные показатели: " 
+                                x:Name="HpVoinT"
+                                HorizontalAlignment="Left" 
+                                VerticalAlignment="Bottom"
+                                Foreground="Black" 
+                                Margin="10,0,0,130"/>
+                        </Grid>
+                </Border>
+        </Grid>
 </Window>

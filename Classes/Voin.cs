@@ -8,7 +8,7 @@ class Voin
         hp = 100;
         img = "avares://Pr8/Img/Voin.jpg";
     }
-    public virtual void mdamage(int _damage)
+    public virtual void mdamage(float _damage)
     {
         hp -= _damage;
         if (hp < 0)
